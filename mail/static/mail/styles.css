@@ -1,0 +1,521 @@
+/* light gray #A6A6A6 */
+
+html, 
+body {
+    height: 100%;
+    min-height: 500px;
+    min-width: 535px;
+}
+
+body {
+    padding: 10px; /* To have white margin all around */
+    font-family: "Microsoft Sans Serif";
+}
+
+/* Register */
+.container--register{
+    background-color: #008080;
+    height: 100%;
+}
+
+.img {
+    background-image: url('images/outlook.png');
+    background-position: 182px -139px;
+    width: 40px;
+    height: 40px;
+}
+.register-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C0C0C0;
+    width: 500px;
+    height: 325px;
+    border: 2px solid; 
+    border-color: white gray gray white;
+    /* box-shadow: 1px 0 black inset,
+                0 1px black inset,
+                -2px 0 white inset,
+                0 -2px white inset;  */
+}
+
+.register-wrapper .header__container--blue {
+    padding: 5px;
+}
+
+.register-form-wrapper {
+    padding: 10px 20px;
+}
+
+.register-buttons {
+    text-align: right;
+    
+}
+
+.register-buttons input{
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #C0C0C0;
+    border: solid black; 
+    border-width: 1px 2.5px 2.5px 1px;
+    padding: 3px 25px;
+    box-shadow: 0 1px white inset,
+                1px 0 white inset,
+                -2px 0 gray inset,
+                0 -2px gray inset;
+}
+.register-buttons input:active, .register-buttons input:visited {
+    border: 1px solid black;
+}
+
+.register-buttons a {
+    padding: 5px 25px;
+    text-decoration: none;
+    color: black;
+    background-color: #C0C0C0;
+    border: solid black; 
+    border-width: 1px 2px 2px 1px;
+    border-color: white black black white;
+    box-shadow: -1px 0 gray inset,
+                0 -1px gray inset;
+}
+
+.register-buttons a:active, .register-buttons a:visited {
+    border: 1px solid ;
+    border-color: white black black white
+}
+
+
+.message {
+    font-weight: bold;
+    color: red;
+    height: 24px;
+}
+
+/* Login */
+.login-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C0C0C0;
+    width: 500px;
+    height: 250px;
+    border: 2px solid; 
+    border-color: white gray gray white;
+    /* box-shadow: 1px 0 black inset,
+                0 1px black inset,
+                -2px 0 white inset,
+                0 -2px white inset;  */
+}
+
+
+
+/* E mail */
+.container--mail {
+    background-color: #C0C0C0;
+    height: 100%;
+}
+/* background-image: linear-gradient(to right, #0080 , #066C ); */
+.header__container--blue {
+    color: white;
+    /* background-color: #000080; */
+    background-image: linear-gradient(to right, #000080, #1084D0);
+    margin: 0;
+    border-bottom: 1px solid white;
+    height: 35px;
+    padding: 5px 10px;
+}
+
+.header__container--blue div {
+    padding: 0;
+}
+
+.header__container--gray {
+    background-color: #C0C0C0;
+    border-bottom: 2px solid #B1B1B1;
+    padding-left: 2px;
+    height: 35px;
+}
+.header__container--gray button, .header__container--gray button:active, .header__container--gray button:visited {
+    background-color: #C0C0C0;
+    border: solid transparent;
+    border-width: 2px 1px 1px 2px;
+    outline: none;
+}
+.header__container--gray button:hover {
+    border-style: solid;
+    border-width: 2px 1px 1px 2px;
+    border-color: gray white white gray;
+    cursor: pointer;
+}
+.header__container--gray button a {
+    text-align: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.small-separator {
+    border-left: 1px solid rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
+    border-right: 1px solid rgb(128,128,128);
+    border-bottom: 1px solid rgb(128,128,128);
+    background-color: rgb(192,192,192);
+    width: 3px;
+    height: 26px;
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.big-separator {
+    float: right;
+    border-left: 2px solid rgb(128,128,128);
+    border-right: .5px solid rgb(255,255,255);
+    height: 22px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+/*  */
+.main {
+    height: calc(100% - 70px);
+    margin: 0;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: white gray gray white;
+    padding: 10px 15px;
+}
+
+.main__main { 
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#emails-view {
+    height: 100%
+}
+
+#emails-view .table-outer {
+    height: calc(100% - 57px)
+}
+
+#emails-view .table-wrapper {
+    height: 100%;
+    overflow: auto;
+    border: 2px solid;
+    border-color: gray white white gray;
+}
+
+#emails-view table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+#emails-view table thead {
+    box-shadow: 0 -2px gray inset,
+                0 2px white inset,
+                2px 0 white inset,
+                -2px 0 gray inset;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#emails-view table tbody tr td{
+    white-space: nowrap; 
+    text-overflow:ellipsis; 
+    overflow: hidden;
+}
+
+#emails-view table tbody tr td:nth-of-type(3) {
+    padding-left: 5px;
+}
+
+.table-head-img {
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url('images/ico.png');
+    background-position: 87px -81px;
+    width: 20px;
+    height: 26px;
+}
+
+.unread-email {
+    display: block;
+    background-image: url('images/outlook-1.png');
+    background-position: 86px -63px;
+    width: 30px;
+    height: 26px;
+    background-size: 885%;
+}
+
+.read-email {
+    display: block;
+    background-image: url('images/outlook-1.png');
+    background-position: 175px -91px;
+    width: 30px;
+    height: 26px;
+    background-size: 885%;
+}
+
+
+#emails-view p {
+    color: white;
+    padding: 0 5px;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.sidebar {
+    height: 100%;
+    border: 1px solid;
+    border-color: gray white gray gray;
+    padding: 0;
+    min-width: 80px;
+    background-color: gray;
+}
+
+.col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 12.333333%;
+    flex: 0 0 12.333%;
+    max-width: 12.333%;
+}
+.sidebar__title {
+    font-size: 15px;
+    text-align: center;
+    background-color: #C0C0C0;
+    border: 1px solid;
+    border-color: white gray gray white
+}
+
+.sidebar__box button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.sidebar__box button:hover {
+    border: 1px solid;
+    border-color: white gray gray white;
+    box-shadow: 1px 1px black;
+}
+.sidebar__box button:active {
+    border: 1px solid;
+    border-color: gray white white gray;
+    box-shadow: -1px -1px black;
+}
+.sidebar__box button:focus {
+    outline: none;
+}
+
+.sidebar__box div{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+}
+
+.sidebar__box:nth-of-type(1) {
+    padding: 2% 0;
+}
+
+.sidebar__box:nth-of-type(1) button{
+    background-image: url('images/outlook.png');
+    background-position: 182px -139px;
+    /* background-position: 125px -91px; */
+    /* background-position: 255px -132px; */
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__box:nth-of-type(2) button{
+    background-image: url('images/outlook.png');
+    background-position: 233px -181px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__box:nth-of-type(3) button{
+    background-image: url('images/outlook.png');
+    background-position: 91px -139px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__box:nth-of-type(4) button{
+    background-image: url('images/outlook.png');
+    background-position: 233px -139px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__shortcuts {
+    height: calc(100% - 23.5px);
+    border: 1px solid;
+    border-color: black transparent white black;
+}
+
+.mailbox__title {
+    background-color: gray;
+}
+
+
+/* Compose */
+#compose-view, form{
+    height: 100%;
+}
+
+#compose-view .form-wrapper {
+    height: 100%;
+    
+}
+
+.form-control, textarea.form-control{
+    border-radius: 0;
+    border: 1px solid;
+    border-color: gray white white gray;
+    box-shadow: 0 1px black inset,
+                1px 0 black inset,
+                -1px 0 white inset,
+                0 -1px white inset;
+    
+}
+.form-textarea {
+    height: calc(100% - 216px);
+}
+
+textarea.form-control {
+    overflow-y: scroll;
+    height: 100%;
+    resize: none;
+}
+.form-group .col-sm-10 input.form-control, .form-group textarea.form-control {
+    color: black
+}
+
+.form-group .col-sm-10 input.form-control:disabled {
+    color: gray;
+    background-color: #C0C0C0;
+    opacity: 1;
+}
+
+.form-btn {
+    text-align: right;
+}
+
+.form-btn input{ 
+    background-color: #C0C0C0;
+    border: solid black; 
+    border-width: 1px 2px 2px 1px;
+    padding: 2px 40px;
+    box-shadow: 0 1px white inset,
+                1px 0 white inset,
+                -2px 0 gray inset,
+                0 -2px gray inset;
+
+}
+
+.form-btn input:active, .form-btn input:visited {
+    border: 1px solid black;
+}
+
+
+/* Single email */
+#email-view {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.email-info .col {
+    overflow-wrap: break-word;
+}
+.email-info-buttons {
+    padding: 15px 0;
+}
+
+.email-info-buttons button {
+    /* background-color: #C0C0C0;
+    margin-right: 15px;
+    padding: 1px 7px 1px 4px;
+    border: 1px solid;
+    border-color: white black black white;
+    box-shadow: -1px 0 gray inset,
+                0 -1px gray inset,
+                1px 0 white inset,
+                0 1px white inset; */
+
+    background-color: #C0C0C0;
+    margin-right: 15px;
+    padding: 1px 7px 1px 4px;
+    border: solid black; 
+    border-width: 1px 2px 2px 1px;
+    box-shadow: 0 1px white inset,
+                1px 0 white inset,
+                -1px 0 gray inset,
+                0 -1px gray inset;            
+}
+
+.email-info-buttons button:active, .email-info-buttons button:visited, .email-info-buttons button:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.email-info-buttons button .reply-btn { 
+    display: inline-block;
+    background-image: url('images/outlook.png');
+    background-position: 191px -376px;
+    width: 29px;
+    height: 29px;
+    background-size: 1030%;
+    vertical-align: middle;
+}
+
+.email-info-buttons button .archive-btn {
+    display: inline-block;
+    background-image: url('images/outlook.png');
+    background-position: 165px -352px;
+    width: 29px;
+    height: 29px;
+    background-size: 1030%;
+    vertical-align: middle;
+}
+
+.email-info-buttons button .to-inbox-btn { 
+    display: inline-block;
+    background-image: url('images/outlook.png');
+    background-position: 81px -352px;
+    width: 29px;
+    height: 29px;
+    background-size: 1030%;
+    vertical-align: middle;
+}
+
+.email-body {
+    height: calc(100% - 170px);
+    background-color: white;
+    border: 1px solid;
+    border-color: gray white white gray;
+}
+
+.email-body{
+    padding: 1px 5px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+
+/* background-position: 273px -142px; */
+
+/* Media queries */
+@media only screen and (max-width: 575px) {
+    #compose-view .form-wrapper {
+        overflow-x: auto;
+    }    
+}
+

@@ -1,0 +1,43 @@
+{% extends "mail/layout.html" %}
+
+{% block body %}
+    <div class="container--register">
+        <div class="register-wrapper">
+            <div class="header__container--blue">CS50 Mail - Register</div>
+
+            <div class="register-form-wrapper">
+                <form action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <label for="E-mail" class="col-3 col-form-label">Email:</label>
+                        <div class="col">
+                            <input autofocus class="form-control" type="email" name="email" id="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-3 col-form-label">Password:</label>
+                        <div class="col">
+                        <input class="form-control" type="password" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="confirm" class="col-3 col-form-label">Confirm Password:</label>
+                        <div class="col">
+                        <input class="form-control" type="password" name="confirmation" id="confirm">
+                        </div>
+                    </div>
+                    <div class="message">
+                        {% if message %}
+                            {{ message }}
+                        {% endif %}
+                    </div>
+                    <div class="register-buttons">
+                        <input type="submit" value="Register">
+                        <a href="{% url 'login' %}">Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
