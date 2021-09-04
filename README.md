@@ -1,2 +1,13 @@
-# retro-mail
-An implementation of a single-page-app email similar in design to outlook 97. This is my submission for the third project for Harvard CS50's Web Programming with Python and JavaScript course. It is built using JavaScript, HTML, CSS, Bootstrap and Django. 
+# Retro Mail
+An implementation of a single-page-app email client similar in design and function(kind of) to outlook 97. 
+
+## Overview
+This is my submission for the third project of Harvard CS50's Web Programming with Python and JavaScript course. View specifications [here](https://cs50.harvard.edu/web/2020/projects/3/mail/).
+
+## Project Details
+It is built using JavaScript, HTML, CSS, Bootstrap and Django. 
+
+### Demo
+<p align="center">
+<img src="mail/static/mail/images/demo.gif" width=62% height=50%/>
+</p>
