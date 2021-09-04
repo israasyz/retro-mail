@@ -9,5 +9,7 @@ It is built using JavaScript, HTML, CSS, Bootstrap and Django.
 
 ### Demo
 <p align="center">
-<img src="mail/static/mail/images/demo.gif" width=62% height=50%/>
+  <img src="mail/static/mail/images/demo.gif" width=62% height=50%/>
 </p>
+
+To see a full demo(with much better quality) of the reto mail project click [here](https://www.youtube.com/watch?v=8OZpFcwq41w).
